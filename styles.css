@@ -1,0 +1,370 @@
+body {
+  background-image: url('—Pngtree—ethereal\ and\ mysterious\ border\ with_13586070.jpg');  
+  background-size: cover;                 /* Cover entire page/viewport */
+  background-position: center;            
+  background-attachment: fixed;           /* bckground stays fixed*/
+  background-repeat: no-repeat;           
+  min-height: 100vh;                      
+}
+
+/* style for skills,ach,contacts */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    
+}
+
+/* top nav bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 2;
+}
+/* decoration for top nav bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff1493;
+}
+
+/* opening page */
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px; 
+  position: relative;
+  overflow: hidden; 
+}
+
+/* Darker theme for opening page */
+header::before {
+  content: "";   
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); 
+  z-index: 0;
+}
+
+/* left intro page */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 50%; 
+  color: white;
+  padding: 20px;
+  text-align: left; 
+}
+
+/* style intro */
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 15px;
+}
+
+/* style para */
+.hero-content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Photo jude */
+.hero-image-box {
+  position: relative;
+  z-index: 1;
+  max-width: 35%;           
+  max-height: 600px;         
+  padding: 10px;            
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  border: 2px solid #ff4d94; 
+  border-radius: 15px;       
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;          
+}
+
+/* jude style */
+.hero-image-box img {
+  width: 100%;
+  height: auto;
+  max-height: 520px;         
+  border-radius: 10px;
+}
+
+
+#about {
+  border: 2px solid pink;      
+  color: white;                
+  padding: 20px;               
+  margin: 20px;                
+  border-radius: 10px;         
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.5); 
+}
+
+#about p{
+  font-size: larger;
+}
+
+/* about styling */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill-list span {
+    background: #ff1493;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+/* Styles  Resume  */
+#resume {
+  color: white;                
+  padding: 40px 20px;           
+  text-align: center;
+}
+
+/* resume box */
+.resume-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* resume heading */
+.section-title {
+  font-size: 2.5em;
+  color: #ff4d94;              
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* underline Effect */
+/* .section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ff4d94;
+  margin: 10px auto 0;
+  border-radius: 5px;
+} */
+
+/* Resume layout */
+.resume-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* block for Educ and Exp */
+.resume-column {
+  background-color: #2a2a2a;   
+  border: 2px solid #ff4d94;  
+  border-radius: 15px;         
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;            
+  transition: transform 0.3s ease;  /* hover */
+  box-shadow: 0 4px 8px rgba(255, 77, 148, 0.3); 
+}
+
+/* Hover Effect for Resume Boxes */
+.resume-column:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(255, 77, 148, 0.5);
+}
+
+/* Resume */
+.resume-item {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ff4d94;  
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+/* Hover */
+.resume-item:hover {
+  background-color: #444;
+}
+
+/* Year Styling */
+.resume-year {
+  font-weight: bold;
+  color: #ff4d94;
+  margin-bottom: 5px;
+}
+
+/* details resume */
+.resume-details h4 {
+  margin: 5px 0;
+  font-size: 1.2em;
+  color: #f2f2f2;
+}
+
+.resume-details p {
+  margin: 0;
+  font-style: italic;
+  color: #cccccc;
+}
+
+
+/* Achievements */
+#achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+#achievements ul li {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* Responsiveness for opening page */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* /* socials */
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: blue;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  
+  
+
+  
+  
+html{
+  scroll-behavior: smooth;
+}
+
+.line{
+  width: 100%;
+  height: 10px;
+  background-color: rgb(43, 41, 41);
+}
